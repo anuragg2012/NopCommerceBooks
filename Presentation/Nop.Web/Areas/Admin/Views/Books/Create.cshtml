@@ -1,0 +1,22 @@
+﻿@model Nop.Web.Areas.Admin.Models.Books.BooksModel
+
+@{
+    ViewData["Title"] = "Add New Book";
+}
+
+<h1>Add New Book</h1>
+
+<form method="post" asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CreatedOn"></label>
+        <input asp-for="CreatedOn" type="date" class="form-control" />
+        <span asp-validation-for="CreatedOn" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="List" class="btn btn-secondary">Cancel</a>
+</form>

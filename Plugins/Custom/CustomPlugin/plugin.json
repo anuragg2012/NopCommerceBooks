@@ -1,0 +1,10 @@
+{
+  "Group": "Misc",
+  "FriendlyName": "Custom Plugin",
+  "SystemName": "Books.CustomPlugin",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.3" ],
+  "Author": "YourCompany",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Books.CustomPlugin.dll"
+}
